@@ -1,5 +1,5 @@
 class Crew:
-    def __init__(self, description, year, duration, completed = False, id = None),:
+    def __init__(self, description, year, duration, completed = False, id = None,):
         self.description = description
         self.year = year
         self.duration = duration
