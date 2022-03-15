@@ -1,4 +1,3 @@
-import re
 from unittest import result
 import psycopg2
 import psycopg2.extras as ext

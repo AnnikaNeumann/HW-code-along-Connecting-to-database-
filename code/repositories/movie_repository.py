@@ -1,18 +1,18 @@
-# repositories/crew_repository.py
+# repositories/movie_repository.py
 
 from db.run_sql import run_sql
-from models.crew import *
+from modules.movie import Movie 
   
 def select_all():  
-    Crew = [] # ADDED - in case we get `None` back from run_sql
-
-    sql = "SELECT * FROM crew"
+    movies = [] # ADDED - in case we get `None` back from run_sql
+    # Movies tablename
+    sql = "SELECT * FROM movies"
     results = run_sql(sql)
 
     for row in results:
-        Crew = Crew(row['description'], row['year'], row['duration'], row['completed'], row['id'] )
-        Crew.append(Crew)
-    return Crew 
+        movie_item = Movie(row['description'], row['year'], row['duration'], row['id'] )
+        movies.append(movie_item)
+    return movies 
 
 # The function called `select_all` in our `crew_repository` to get all the rows in the `crew` table in the database and return a list of crew objects. 
 # The SQL will be a `SELECT` clause. Since we are simply getting all the rows in the table, we do not need to pass any values into the `run_sql` function, 

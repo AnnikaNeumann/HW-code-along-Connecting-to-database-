@@ -30,11 +30,11 @@ VALUES ('The Motion Picture', 1979, 132);
 INSERT INTO movies (description, year, duration) 
 VALUES ('The Wrath Of Khan', 1982, 113);
 
--- INSERT INTO movies (title, year, duration) 
--- VALUES ('The Search For Spock', 1986, 119);
+INSERT INTO movies (description, year, duration) 
+VALUES ('The Search For Spock', 1986, 119);
 
--- INSERT INTO movies (title, year, duration) 
--- VALUES ('Generations', 1994, 118);
+INSERT INTO movies (description, year, duration) 
+VALUES ('Generations', 1994, 118);
 
 
 --  1.  Return ALL the data in the 'movies' table. 
@@ -50,7 +50,7 @@ UPDATE crew SET name ='Seven Of Nine' WHERE name = 'Seven of Fife';
 SELECT name FROM crew WHERE name = 'William Riker';
 
  -- 5.  The cinema has just heard that they will be holding an exclusive midnight showing of 'Resurrection'!! Create a new entry in the 'movies' table to reflect this.
-INSERT INTO movies (title, year, duration) VALUES ('Resurrection', 1998, 103);
+INSERT INTO movies (description, year, duration) VALUES ('Resurrection', 1998, 103);
 
 --  6.  Chakotay has decided to hijack our crew dinner, Remove him from the table of people.
 DELETE FROM crew WHERE name = 'Chakotay';
